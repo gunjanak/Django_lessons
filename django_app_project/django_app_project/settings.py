@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Hello_app.apps.HelloAppConfig',
+    'Hello_app.apps.HelloAppConfig', #new
 ]
 
 MIDDLEWARE = [
@@ -64,7 +64,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+
         },
+        "DIRS": [BASE_DIR / "templates"],
     },
 ]
 
