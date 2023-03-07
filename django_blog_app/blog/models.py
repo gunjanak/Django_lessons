@@ -9,6 +9,7 @@ class Post(models.Model):
     body = models.TextField()
 
     def __str__(self):
+        print(self.title)
         return self.title;
 
     def get_absolute_url(self):
