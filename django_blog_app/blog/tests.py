@@ -37,6 +37,7 @@ class BlogTests(TestCase):
 
     def test_post_listview(self):
         response =self.client.get(reverse("home"))
+        print(response)
         self.assertEqual(response.status_code,200)
         self.assertContains(response,"Content")
         self.assertTemplateUsed(response,"home.html")
